@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1> Budget Visualizer & Expense Tracker</h1>
+
+    <div class="top-bar">
+      <button id="toggleMode">🌙</button>
+    </div>
+    
+    <div class="total-box">
+      <p>Total</p>
+    
+      <h2 id="totalDisplay">
+        $ <span id="total">0</span>
+        <span id="limitDisplay">/ 0</span>
+      </h2>
+    
+      <div class="limit-set">
+        <input type="number" id="limit" placeholder="Set limit">
+        <button id="setLimit">Set Limit</button>
+      </div>
+    </div>
+
+    <form id="form">
+      <input type="text" id="name" placeholder="Item name">
+      <input type="number" id="amount" placeholder="Amount">
+
+      <select id="category"></select>
+      <input type="text" id="newCategory" placeholder="New category (optional)">
+
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <canvas id="chart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

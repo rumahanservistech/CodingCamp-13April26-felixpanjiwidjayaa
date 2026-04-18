@@ -1,0 +1,150 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #e0f7fa, #f4f4f4);
+  margin: 0;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* TOTAL BOX */
+.total-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .total-box {
+  background: #1e1e1e;
+}
+
+/* TOP RIGHT BUTTON */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+/* TOTAL BOX COLOR STATES */
+.total-safe {
+  color: #00c853;
+  /* hijau terang */
+}
+
+.total-danger {
+  color: red;
+}
+
+/* LIMIT INPUT */
+.limit-set {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.limit-set input {
+  flex: 1;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body.dark form {
+  background: #1e1e1e;
+}
+
+/* INPUT */
+input,
+select,
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+/* ITEM */
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+body.dark li {
+  background: #1e1e1e;
+}
+
+/* DELETE */
+.delete {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete:hover {
+  text-decoration: underline;
+}
+
+/* LIMIT WARNING */
+.warning {
+  border-left: 5px solid red;
+  background: #ffe5e5;
+}
+
+/* DARK MODE BUTTON */
+#toggleMode {
+  margin-bottom: 10px;
+}
